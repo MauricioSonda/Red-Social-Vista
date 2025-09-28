@@ -1,5 +1,4 @@
 
-/* General */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     position: sticky;
     top: 0;
@@ -47,18 +45,16 @@ main {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 20px; /* separación entre posts */
+    margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Texto del post */
 .post-text {
     margin: 10px 0;
     font-size: 15px;
     color: #050505;
 }
 
-/* Imagen del post */
 .post-img {
     width: 100%;
     border-radius: 8px;
@@ -100,15 +96,13 @@ a:hover {
     border-top: 1px solid #ddd;
 }
 
-/* Cada comentario en bloque */
 .comment {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 10px; /* salto entre comentarios */
+    margin-bottom: 10px;
     width: 100%;
 }
 
-/* Imagen del comentario */
 .comment img {
     width: 32px;
     height: 32px;
@@ -117,7 +111,6 @@ a:hover {
     flex-shrink: 0;
 }
 
-/* Caja del comentario */
 .comment-bubble {
     background: #f0f2f5;
     padding: 8px 12px;
@@ -128,7 +121,6 @@ a:hover {
     display: inline-block;
 }
 
-/* Nombre del usuario */
 .comment-bubble strong {
     display: block;
     font-weight: bold;
@@ -136,14 +128,12 @@ a:hover {
     color: #050505;
 }
 
-/* Acciones debajo */
 .comment-actions {
     font-size: 12px;
     color: #65676b;
     margin-top: 3px;
 }
 
-/* ---- Input para nuevo comentario ---- */
 .comment-box {
     display: flex;
     align-items: center;
@@ -186,7 +176,6 @@ a:hover {
     transform: scale(1.1);
 }
 
-/* Contenedor del perfil */
 .profile-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -194,7 +183,6 @@ a:hover {
     padding: 20px;
 }
 
-/* Columna izquierda: foto */
 .profile-left {
     display: flex;
     justify-content: center;
@@ -207,7 +195,6 @@ a:hover {
     border: 2px solid #ddd;
 }
 
-/* Columna central: biografía */
 .profile-bio {
     background: #fff;
     border: 1px solid #ddd;
@@ -290,7 +277,7 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive */
+/* Responsivo */
   @media (min-width: 1024px) {
     main {
       grid-template-columns: 2fr 350px;

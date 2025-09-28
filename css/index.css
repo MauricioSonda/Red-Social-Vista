@@ -1,0 +1,269 @@
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c2c2c;
+    padding: 0px 10px;
+    color: #fff;
+    height: 100px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 20%;
+}
+
+.profilePic {
+    width: 80px;          
+    height: 80px;         
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+/* Publicaciones */
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px; /* separación entre posts */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Texto del post */
+.post-text {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #050505;
+}
+
+/* Imagen del post */
+.post-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+}
+
+.username {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+.user-img{
+    width: 50px;          
+    height: 50px;         
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+}
+
+
+a:hover {
+    text-decoration: none;
+    
+}
+
+/* ---- Comentarios ---- */
+.comments {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Cada comentario en bloque */
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px; /* salto entre comentarios */
+    width: 100%;
+}
+
+/* Imagen del comentario */
+.comment img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+/* Caja del comentario */
+.comment-bubble {
+    background: #f0f2f5;
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+    display: inline-block;
+}
+
+/* Nombre del usuario */
+.comment-bubble strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #050505;
+}
+
+/* Acciones debajo */
+.comment-actions {
+    font-size: 12px;
+    color: #65676b;
+    margin-top: 3px;
+}
+
+/* ---- Input para nuevo comentario ---- */
+.comment-box {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.comment-box img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.comment-input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 1px #1877f2;
+}
+
+.comment-btn {
+    background: #20d48c;
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 6px;
+    transition: transform 0.2s;
+}
+.comment-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* Chat */
+.chat {
+    background: #252424;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.chat-user-img {
+    width: 50px;          
+    height: 50px;         
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px;
+}
+
+.chat h3 {
+    margin-top: 0;
+    color: #dee1f3;
+    text-decoration: none;
+}
+
+.chat ul {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.chat li {
+    margin: 10px 0;
+    color: #dee1f3;
+    text-decoration: none;
+}
+
+.chat-float {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: #20d48c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.chat-float:hover {
+    background: #189c67;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c2c2c;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive */
+  @media (min-width: 1024px) {
+    main {
+      grid-template-columns: 2fr 350px;
+      align-items: start;
+    }
+  
+    .chat {
+      display: block;
+      position: fixed;   
+      width: 20%;        
+      height: 80%;
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+  
+  
+  
